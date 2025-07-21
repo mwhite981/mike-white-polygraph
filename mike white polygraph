@@ -1,0 +1,212 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Mail, Phone } from "lucide-react";
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-white text-gray-900">
+      <header className="bg-blue-900 text-white p-6 shadow-md">
+        <div className="max-w-6xl mx-auto flex items-center justify-between">
+          <div className="flex items-center space-x-4">
+            <Image
+              src="/logo.png"
+              alt="Mike White Polygraph Services Logo"
+              width={50}
+              height={50}
+            />
+            <h1 className="text-2xl font-bold">Mike White Polygraph Services</h1>
+          </div>
+          <div className="hidden md:flex space-x-6">
+            <a href="#about" className="hover:underline">
+              About
+            </a>
+            <a href="#services" className="hover:underline">
+              Services
+            </a>
+            <a href="#contact" className="hover:underline">
+              Contact
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section className="bg-gray-100 py-16 text-center">
+        <h2 className="text-4xl font-bold mb-4">
+          Truth Verified. Trust Earned.
+        </h2>
+        <p className="text-lg mb-6">
+          Providing professional, reliable polygraph services backed by decades
+          of law enforcement experience.
+        </p>
+        <Button className="bg-blue-900 text-white px-6 py-3 rounded-xl shadow">
+          Schedule a Test
+        </Button>
+      </section>
+
+      <section id="about" className="max-w-4xl mx-auto p-8">
+        <h3 className="text-2xl font-bold mb-4">About Mike White</h3>
+        <p className="text-lg">
+          Dr. Mike White, PhD, brings over 40 years of police experience and is a
+          certified polygraph examiner. Known for integrity and precision,
+          Mike offers credible and court-admissible polygraph testing services
+          across Ohio.
+        </p>
+      </section>
+
+      <section id="services" className="bg-gray-50 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h3 className="text-2xl font-bold mb-8 text-center">Services Offered</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card>
+              <CardContent className="p-6">
+                <h4 className="font-bold text-xl mb-2">Pre-Employment Polygraphs</h4>
+                <p>Ensure integrity and transparency in your hiring process.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <h4 className="font-bold text-xl mb-2">Criminal Investigation Support</h4>
+                <p>Assistance in active investigations with validated testing protocols.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <h4 className="font-bold text-xl mb-2">Civil Disputes & Personal Matters</h4>
+                <p>Get clarity in personal or legal disputes with confidential testing.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <h4 className="font-bold text-xl mb-2">Custom Polygraph Exams</h4>
+                <p>Tailored testing based on your specific needs and requirements.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="max-w-4xl mx-auto p-8">
+        <h3 className="text-2xl font-bold mb-4">Contact</h3>
+        <div className="flex items-center space-x-4 mb-2">
+          <Phone className="text-blue-900" />
+          <span>419-554-1593</span>
+        </div>
+        <div className="flex items-center space-x-4">
+          <Mail className="text-blue-900" />
+          <span>mwhite981@gmail.com</span>
+        </div>
+      </section>
+
+      <footer className="bg-blue-900 text-white text-center py-4 mt-12">
+        &copy; {new Date().getFullYear()} Mike White Polygraph Services. All rights reserved.
+      </footer>
+    </main>
+  );
+}
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Mail, Phone } from "lucide-react";
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-white text-gray-900">
+      <header className="bg-blue-900 text-white p-6 shadow-md">
+        <div className="max-w-6xl mx-auto flex items-center justify-between">
+          <div className="flex items-center space-x-4">
+            <Image
+              src="/logo.png"
+              alt="Mike White Polygraph Services Logo"
+              width={50}
+              height={50}
+            />
+            <h1 className="text-2xl font-bold">Mike White Polygraph Services</h1>
+          </div>
+          <div className="hidden md:flex space-x-6">
+            <a href="#about" className="hover:underline">
+              About
+            </a>
+            <a href="#services" className="hover:underline">
+              Services
+            </a>
+            <a href="#contact" className="hover:underline">
+              Contact
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <section className="bg-gray-100 py-16 text-center">
+        <h2 className="text-4xl font-bold mb-4">
+          Truth Verified. Trust Earned.
+        </h2>
+        <p className="text-lg mb-6">
+          Providing professional, reliable polygraph services backed by decades
+          of law enforcement experience.
+        </p>
+        <Button className="bg-blue-900 text-white px-6 py-3 rounded-xl shadow">
+          Schedule a Test
+        </Button>
+      </section>
+
+      <section id="about" className="max-w-4xl mx-auto p-8">
+        <h3 className="text-2xl font-bold mb-4">About Mike White</h3>
+        <p className="text-lg">
+          Dr. Mike White, PhD, brings over 40 years of police experience and is a
+          certified polygraph examiner. Known for integrity and precision,
+          Mike offers credible and court-admissible polygraph testing services
+          across Ohio.
+        </p>
+      </section>
+
+      <section id="services" className="bg-gray-50 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h3 className="text-2xl font-bold mb-8 text-center">Services Offered</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card>
+              <CardContent className="p-6">
+                <h4 className="font-bold text-xl mb-2">Pre-Employment Polygraphs</h4>
+                <p>Ensure integrity and transparency in your hiring process.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <h4 className="font-bold text-xl mb-2">Criminal Investigation Support</h4>
+                <p>Assistance in active investigations with validated testing protocols.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <h4 className="font-bold text-xl mb-2">Civil Disputes & Personal Matters</h4>
+                <p>Get clarity in personal or legal disputes with confidential testing.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6">
+                <h4 className="font-bold text-xl mb-2">Custom Polygraph Exams</h4>
+                <p>Tailored testing based on your specific needs and requirements.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="max-w-4xl mx-auto p-8">
+        <h3 className="text-2xl font-bold mb-4">Contact</h3>
+        <div className="flex items-center space-x-4 mb-2">
+          <Phone className="text-blue-900" />
+          <span>419-554-1593</span>
+        </div>
+        <div className="flex items-center space-x-4">
+          <Mail className="text-blue-900" />
+          <span>mwhite981@gmail.com</span>
+        </div>
+      </section>
+
+      <footer className="bg-blue-900 text-white text-center py-4 mt-12">
+        &copy; {new Date().getFullYear()} Mike White Polygraph Services. All rights reserved.
+      </footer>
+    </main>
+  );
+}
